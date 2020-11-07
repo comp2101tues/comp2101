@@ -26,7 +26,7 @@ function error-exit {
   return 2
 }
 #This function displays help information if the user asks for it on the command line or gives us a bad command line
-function displayhelp {
+function cleanup {
   if [ $# -gt 0 ]; then
     if [ $1 -eq -h | --help ]; then
       echo "help should be given"
